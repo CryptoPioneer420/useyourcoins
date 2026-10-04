@@ -1,0 +1,4 @@
+# Ausschnitt für supabase/config.toml im Lovable-Repo ergänzen.
+# Die Redirect-Function wird per Browser-Navigation aufgerufen, ohne Authorization-Header.
+[functions.go]
+verify_jwt = false

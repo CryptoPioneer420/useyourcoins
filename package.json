@@ -1,0 +1,23 @@
+{
+  "name": "krypto-guide-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Logik, Daten und Migrationen für den Krypto-Spending-Guide (Übergabe an Lovable)",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "seed:sql": "node scripts/build-seed-sql.mjs",
+    "db:verify": "node scripts/verify-sql.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.2.17",
+    "@supabase/supabase-js": "^2.45.0",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

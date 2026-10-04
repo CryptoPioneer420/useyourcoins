@@ -1,0 +1,28 @@
+/** Produkt-Typen (Karten und Börsen). Quelle: src/lib/types.ts. Hier nur Re-Exporte, keine eigenen Definitionen. */
+export type {
+  Product,
+  ProductType,
+  ProductStatus,
+  CardDetails,
+  CardKind,
+  CardNetwork,
+  CardForm,
+  MobileWallet,
+  KycLevel,
+  CustodyModel,
+  FundingFlow,
+  DepositMethod,
+  FeeStructure,
+  RewardStructure,
+  StakingRequirement,
+  Availability,
+  AvailabilityStatus,
+  Confidence,
+  Offer,
+  OfferBadge,
+  BadgeKind,
+  AffiliateModel,
+  TrackingType,
+  Catalog,
+} from "../lib/types";
+export type { FactorScore, MatchResult, ReasonCode, WarningCode, BadgeCode } from "../lib/matching";
