@@ -265,9 +265,7 @@ Layout
 - Anbieter-Logo: providerLogoPath(slug); bei null das Monogramm aus providerMonogram(name).
 - Impressum: Felder aus OPERATOR. Ist missingOperatorFields() nicht leer, legal.imprintIncomplete anzeigen.
 
-Design-System: ruhig, faktisch, Finanzvergleich statt Krypto-Hype. Neutrale Grundfarben, eine Akzentfarbe für CTAs,
-Amber für Warnungen, Emerald für positive Fakten. shadcn/ui-Tokens, Dark Mode, System-Schriften oder selbst gehostete Fonts.
-Referenz: preview/ergebniskarte-vorschau.html.
+Design-System: nach docs/DESIGN.md (Richtung B, Neobank-Optik). Sichtreferenz: preview/design-richtung-b.html.
 
 Seiten zunächst als Platzhalter mit H1 aus buildMeta().
 ```

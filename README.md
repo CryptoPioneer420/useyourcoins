@@ -11,7 +11,8 @@ Dieses Repo ist die Quelle für Logik, Daten und Pflichttexte. Es enthält bewus
 1. `docs/M0-UEBERGABE.md` — verbindlich: Marke, URL-Schema, Rendering, Abnahme
 2. `docs/LOVABLE_BRIEF.md` — Datenmodell, Kernfunktionen, Seiteninhalte
 3. `docs/LOVABLE_PROMPTS.md` — Projektregeln und Meilensteine
-4. `docs/KONZEPT-ERGEBNISKARTE.md` — Ergebnisansicht
+4. `docs/DESIGN.md` — Design-Vorgabe, Sichtreferenz `preview/design-richtung-b.html`
+5. `docs/KONZEPT-ERGEBNISKARTE.md` — Ergebnisansicht
 
 **Übernahme ins Lovable-Projekt**
 
@@ -35,6 +36,7 @@ Dieses Repo ist die Quelle für Logik, Daten und Pflichttexte. Es enthält bewus
 | `src/lib/i18n.ts`, `src/locales/` | Oberflächentexte DE/EN |
 | `src/content/learn-registry.ts` | Wissensseiten mit Keyword, Status, Priorität |
 | `src/types/`, `src/data/seed.ts` | Einstiege im von Lovable gewünschten Format |
+| `docs/DESIGN.md` | Design-Vorgabe: Farben, Schrift, Formen, Komponenten, Umgang mit fehlenden Daten |
 | `docs/LOVABLE_BRIEF.md` | **Einstieg für Lovable:** Datenmodell, Kernfunktionen, Seitenstruktur, Meilensteine |
 | `docs/PRD.md` | Produktanforderungen, Score-Formel, Gewichte, Edge Cases, Fahrplan |
 | `docs/LOVABLE_PROMPTS.md` | Meilensteine M0–M4: Aufträge an Claude Code, Lovable-Prompts, Abnahme |
