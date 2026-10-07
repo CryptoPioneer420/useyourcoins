@@ -67,7 +67,7 @@ Lovables Drei-Silo-Modell wird übernommen. Einzige Quelle für alle Pfade ist `
 | Entitäten | Land (8) | `/de/countries/oesterreich` | `/en/countries/austria` | ja |
 | – | Recht (3) | `/de/legal/imprint` | `/en/legal/imprint` | ja |
 
-Das ergibt 68 indexierbare Seiten je Sprache, 136 URLs.
+Das ergibt 70 indexierbare Seiten je Sprache, 140 URLs.
 
 **Änderungen gegenüber dem bisherigen Plan**
 
@@ -117,7 +117,7 @@ Seit 13. Mai 2026 ist TanStack Start der Standard für neue Lovable-Projekte. Se
 Voraussetzungen im Paket sind erfüllt:
 
 - Logik und Komponenten greifen nicht ungeschützt auf `window`, `document` oder `navigator` zu.
-- `prerenderPaths(catalog)` liefert alle 136 Pfade, falls einzelne Routen statisch erzeugt werden sollen.
+- `prerenderPaths(catalog)` liefert alle 140 Pfade, falls einzelne Routen statisch erzeugt werden sollen.
 - `sitemapXml()` und `robotsTxt()` liefern die Inhalte für `/sitemap.xml` und `/robots.txt`.
 
 **Vorgabe an Lovable:** Der Katalog wird im `loader` der Route geladen, nicht erst im Browser. Sonst enthält das HTML nur Platzhalter und der Vorteil des Server-Renderns entfällt. `noindex`-Seiten (`/compare`) dürfen clientseitig rendern.
@@ -275,7 +275,7 @@ Seiten zunächst als Platzhalter mit H1 aus buildMeta().
 - [ ] `npm test` zeigt 120 bestandene Tests, `npm run build` läuft
 - [ ] Quelltext von `/de/learn/mica-verordnung-krypto` (ohne JavaScript) enthält H1 und Fließtext
 - [ ] Jede Seite hat genau einen `canonical` und drei `hreflang`-Einträge
-- [ ] `/sitemap.xml` listet 136 URLs, `/de/compare` hat `noindex`
+- [ ] `/sitemap.xml` listet 140 URLs, `/de/compare` hat `noindex`
 - [ ] `/en/krypto-karten` und `/de/learn/krypto-ohne-kyc` liefern 404
 - [ ] Sprachwechsel auf `/de/countries/oesterreich` führt zu `/en/countries/austria`
 - [ ] Footer-Hinweis auf jeder Seite, keine Cookies, keine externen Schriften

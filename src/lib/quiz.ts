@@ -160,7 +160,7 @@ export interface QuizState {
 }
 
 export type QuizAction =
-  | { type: "START"; goal: Goal; country?: CountryCode }
+  | { type: "START"; goal: Goal; country?: CountryCode; priority?: Priority }
   | { type: "ANSWER"; step: StepId; value: string }
   | { type: "BACK" }
   | { type: "RESET" };
@@ -187,6 +187,18 @@ export function quizReducer(state: QuizState, action: QuizAction): QuizState {
       if (action.country) {
         answers.country = action.country;
         skip.push("country");
+      }
+      // Vorbelegte Priorität (Schnellpfade): nur wenn sie für das Ziel zulässig ist.
+      if (action.priority) {
+        const priorityStep = QUIZ_STEPS.find((x) => x.id === "priority")!;
+        if (priorityStep.options(answers).some((o) => o.value === action.priority)) {
+          answers.priority = action.priority;
+          skip.push("priority");
+        }
+      }
+      // Bleibt keine Frage übrig (z. B. Börse mit Land und Priorität), ist das Quiz sofort fertig.
+      if (visibleSteps(answers, new Set(skip)).length === 0 && isComplete(answers)) {
+        return { status: "done", answers, stepIndex: 0, skip };
       }
       return { status: "in_progress", answers, stepIndex: 0, skip };
     }

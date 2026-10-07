@@ -51,27 +51,38 @@ export const KNOWLEDGE_TOPICS: readonly KnowledgeTopic[] = [
   },
   {
     slug: "dac8",
-    asOf: "2026-10-01",
+    asOf: "2026-10-07",
     title: { de: "DAC8: Was Krypto-Anbieter an das Finanzamt melden", en: "DAC8: what crypto providers report to tax authorities" },
     summary: {
-      de: "Seit 1. Januar 2026 sammeln Krypto-Anbieter in der EU Daten zu deinen Transaktionen und melden sie ab 2027 an die Steuerbehörden. Das erzeugt keine neue Steuer, macht aber Abweichungen in deiner Steuererklärung leichter sichtbar.",
-      en: "Since 1 January 2026 crypto providers in the EU collect data on your transactions and report it to tax authorities from 2027. This creates no new tax but makes discrepancies in your tax return easier to spot.",
+      de: "Seit 1. Januar 2026 sammeln Krypto-Anbieter in der EU deine Steuerdaten. Die erste Meldung für 2026 erfolgt bis zum 31. Juli 2027 in Deutschland und Österreich, der erste EU-weite Austausch bis zum 30. September 2027.",
+      en: "Since 1 January 2026 crypto providers in the EU collect your tax data. The first report for 2026 is due by 31 July 2027 in Germany and Austria, and the first EU-wide exchange by 30 September 2027.",
     },
     details: [
       {
-        de: "Gemeldet werden unter anderem Name, Anschrift, Steuer-ID und Steuerwohnsitz sowie je Kryptowert die Summen aus Käufen, Verkäufen, Tauschvorgängen und Transfers. Zahlungen über Krypto-Karten können als Zahlungstransaktionen erfasst sein.",
-        en: "Reported data include name, address, tax ID and tax residence, plus per crypto-asset the totals of purchases, sales, exchanges and transfers. Payments via crypto cards may be captured as payment transactions.",
+        de: "DAC8 ist keine neue Steuer. Sie sorgt dafür, dass Steuerbehörden Daten zu deinen Krypto-Geschäften automatisch erhalten und mit deiner Steuererklärung vergleichen können.",
+        en: "DAC8 is not a new tax. It ensures that tax authorities receive data on your crypto transactions automatically and can compare them with your tax return.",
       },
       {
-        de: "Das internationale Gegenstück heißt CARF (OECD). Ob Daten aus einem Nicht-EU-Land fließen, hängt davon ab, ob dieses Land teilnimmt.",
-        en: "The international counterpart is CARF (OECD). Whether data flow from a non-EU country depends on whether that country participates.",
+        de: "Der Anbieter holt eine Selbstauskunft von dir ein: Name, Anschrift, Steuerwohnsitz, Steuer-ID und Geburtsdatum. In Deutschland muss sie von Bestandskunden (Kunde am 31. Dezember 2025) bis zum 1. Januar 2027 vorliegen. Antwortest du nicht, muss der Anbieter nach Erinnerung und Aufforderung meldepflichtige Transaktionen frühestens 60 und spätestens 90 Tage nach der ersten Anfrage sperren.",
+        en: "The provider collects a self-certification from you: name, address, tax residence, tax ID and date of birth. In Germany, existing customers (customers on 31 December 2025) must have provided it by 1 January 2027. If you do not respond, after a reminder and a formal request the provider must block reportable transactions no earlier than 60 and no later than 90 days after the first request.",
       },
       {
-        de: "Eine eigene Wallet wird nicht automatisch gemeldet. Ein Anbieter kann aber Transfers zu oder von deiner Wallet-Adresse in seine Meldung aufnehmen.",
-        en: "Your own wallet is not reported automatically. A provider can, however, include transfers to or from your wallet address in its report.",
+        de: "Gemeldet werden je Kryptowert Summen aus Käufen und Verkäufen gegen Euro oder andere Kryptowerte, aus Zahlungen für Waren und Dienstleistungen sowie aus Übertragungen. Übertragungen an externe Wallet-Adressen werden mit aggregiertem Marktwert und Einheiten erfasst. Einzelne Geschäfte werden nicht aufgelistet.",
+        en: "Reported per crypto-asset are totals from purchases and sales against euro or other crypto-assets, from payments for goods and services, and from transfers. Transfers to external wallet addresses are captured with aggregated market value and units. Individual transactions are not itemised.",
+      },
+      {
+        de: "Der Weg der Daten: Dein Anbieter meldet an die Steuerbehörde seines Meldelandes (Deutschland: Bundeszentralamt für Steuern, Österreich: Bundesministerium für Finanzen). Diese leitet die Daten bis zum 30. September 2027 an andere Staaten weiter, darunter dein Wohnsitzstaat. Das internationale Gegenstück heißt CARF (OECD). Ob Daten aus einem Nicht-EU-Land fließen, hängt davon ab, ob dieses Land teilnimmt.",
+        en: "The data path: your provider reports to the tax authority of its reporting country (Germany: Federal Central Tax Office, Austria: Federal Ministry of Finance). That authority forwards the data to other states by 30 September 2027, including your country of residence. The international counterpart is CARF (OECD). Whether data flow from a non-EU country depends on whether that country participates.",
+      },
+      {
+        de: "Für andere Startländer (Frankreich, Spanien, Italien, Niederlande, Malta, Zypern) haben wir den Umsetzungsstand noch nicht geprüft. Die EU-Termine gelten unabhängig davon.",
+        en: "For the other launch countries (France, Spain, Italy, Netherlands, Malta, Cyprus) we have not yet checked the state of implementation. The EU deadlines apply regardless.",
       },
     ],
     sources: [
+      { label: "EU-Kommission: DAC8", url: "https://taxation-customs.ec.europa.eu/taxation/tax-transparency-cooperation/administrative-co-operation-and-mutual-assistance/directive-administrative-cooperation-dac/dac8_en" },
+      { label: "BZSt: Verfahren zum Kryptowerte-Steuertransparenzgesetz (KStTG)", url: "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/DAC8/Verfahren/verfahren_node.html" },
+      { label: "KPMG Österreich: Krypto-Meldepflichtgesetz (Sekundärquelle)", url: "https://kpmg.com/at/de/media/newsletter/tax-news/2026/04/tn-dac8-informationsaustausch-ueber-kryptowerte.html" },
       { label: "DAC8, Richtlinie (EU) 2023/2226", url: "https://eur-lex.europa.eu/eli/dir/2023/2226/oj" },
       { label: "OECD Crypto-Asset Reporting Framework", url: "https://www.oecd.org/tax/exchange-of-tax-information/crypto-asset-reporting-framework-and-amended-common-reporting-standard.htm" },
     ],
@@ -176,6 +187,98 @@ export const KNOWLEDGE_TOPICS: readonly KnowledgeTopic[] = [
     sources: [
       { label: "PSD2, Richtlinie (EU) 2015/2366", url: "https://eur-lex.europa.eu/eli/dir/2015/2366/oj" },
       { label: "E-Geld-Richtlinie 2009/110/EG", url: "https://eur-lex.europa.eu/eli/dir/2009/110/oj" },
+    ],
+  },
+  {
+    slug: "what-providers-report",
+    asOf: "2026-10-07",
+    title: { de: "Wer sieht was? Welche Daten Krypto-Anbieter weitergeben", en: "Who sees what? Which data crypto providers pass on" },
+    summary: {
+      de: "Ein Krypto-Anbieter erhält deine Ausweisdaten und gibt sie nicht routinemäßig an Behörden weiter. Weitergegeben werden Steuerdaten (DAC8), Transferdaten an andere Anbieter (Travel Rule) und Daten bei Verdacht oder auf Anfrage einer Behörde.",
+      en: "A crypto provider receives your ID data and does not pass it to authorities routinely. What is passed on are tax data (DAC8), transfer data to other providers (travel rule) and data in case of suspicion or on an authority's request.",
+    },
+    details: [
+      {
+        de: "1. Du an den Anbieter: Bei der Kontoeröffnung (KYC) liefern Ausweis, Anschrift und Steuerdaten an den Anbieter. Das ist Pflicht für zugelassene Anbieter und dient der Geldwäscheprävention.",
+        en: "1. You to the provider: when opening an account (KYC) you provide ID, address and tax details to the provider. This is mandatory for authorised providers and serves anti-money-laundering purposes.",
+      },
+      {
+        de: "2. Anbieter an Steuerbehörde (DAC8): einmal im Jahr, in Deutschland und Österreich bis 31. Juli. Inhalt: Identität, Steuer-ID und Summen je Kryptowert. Die Behörde leitet die Daten an andere Staaten weiter, auch an deinen Wohnsitzstaat (bis 30. September 2027 für das Jahr 2026).",
+        en: "2. Provider to tax authority (DAC8): once a year, in Germany and Austria by 31 July. Content: identity, tax ID and totals per crypto-asset. The authority forwards the data to other states, including your country of residence (by 30 September 2027 for the year 2026).",
+      },
+      {
+        de: "3. Anbieter an Anbieter (Travel Rule): bei jedem Transfer zwischen Anbietern reisen Angaben zu Absender und Empfänger mit. Bei Auszahlungen über 1.000 € auf eine eigene Wallet kann der Anbieter einen Nachweis verlangen, dass sie dir gehört.",
+        en: "3. Provider to provider (travel rule): with every transfer between providers, details of sender and recipient travel with it. For withdrawals above €1,000 to your own wallet, the provider may ask for proof that it belongs to you.",
+      },
+      {
+        de: "4. Anbieter an die Geldwäsche-Meldestelle: nur bei Verdacht. Der Anbieter darf dich darüber nicht informieren.",
+        en: "4. Provider to the financial intelligence unit: only in case of suspicion. The provider may not inform you about it.",
+      },
+      {
+        de: "5. Behörde an Anbieter: Auskunftsersuchen im Einzelfall, etwa von Steuer- oder Strafverfolgungsbehörden.",
+        en: "5. Authority to provider: information requests in individual cases, for example from tax or law enforcement authorities.",
+      },
+      {
+        de: "Deine Rechte gegenüber dem Anbieter: Auskunft über die gespeicherten Daten nach Art. 15 DSGVO. Die gesetzlichen Meldungen an Behörden kannst du nicht ausschließen.",
+        en: "Your rights towards the provider: access to the stored data under Art. 15 GDPR. You cannot opt out of the statutory reports to authorities.",
+      },
+    ],
+    sources: [
+      { label: "EU-Kommission: DAC8", url: "https://taxation-customs.ec.europa.eu/taxation/tax-transparency-cooperation/administrative-co-operation-and-mutual-assistance/directive-administrative-cooperation-dac/dac8_en" },
+      { label: "BZSt: Verfahren zum Kryptowerte-Steuertransparenzgesetz (KStTG)", url: "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/DAC8/Verfahren/verfahren_node.html" },
+      { label: "Transfer of Funds Regulation (EU) 2023/1113", url: "https://eur-lex.europa.eu/eli/reg/2023/1113/oj" },
+      { label: "DSGVO Art. 15", url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj" },
+    ],
+  },
+  {
+    slug: "regulation-timeline",
+    asOf: "2026-10-07",
+    title: { de: "Krypto-Regulierung 2026 bis 2028: Was wann gilt", en: "Crypto regulation 2026 to 2028: what applies when" },
+    summary: {
+      de: "Bis Mitte 2027 kommen drei Einschnitte: die DAC8-Meldung (31. Juli 2027), die EU-Geldwäscheverordnung AMLR (10. Juli 2027) und der erste EU-Datenaustausch (30. September 2027). 2028 beginnt die direkte EU-Aufsicht über große grenzüberschreitende Finanzunternehmen.",
+      en: "Three milestones arrive by mid-2027: the DAC8 report (31 July 2027), the EU anti-money-laundering regulation AMLR (10 July 2027) and the first EU data exchange (30 September 2027). In 2028 direct EU supervision of large cross-border financial firms begins.",
+    },
+    details: [
+      {
+        de: "30. Dezember 2024: Travel Rule gilt. Bei Transfers zwischen Anbietern reisen Absender- und Empfängerdaten mit.",
+        en: "30 December 2024: the travel rule applies. Sender and recipient data travel with transfers between providers.",
+      },
+      {
+        de: "1. Januar 2026: DAC8 gilt. Anbieter sammeln deine Steuerdaten per Selbstauskunft.",
+        en: "1 January 2026: DAC8 applies. Providers collect your tax data through a self-certification.",
+      },
+      {
+        de: "1. Juli 2026: Die MiCA-Übergangsfristen enden. Ohne Zulassung darf ein Anbieter in der EU keine Krypto-Dienste mehr erbringen.",
+        en: "1 July 2026: the MiCA transition periods end. Without authorisation, a provider may no longer offer crypto services in the EU.",
+      },
+      {
+        de: "1. Januar 2027 (Deutschland): Die Selbstauskunft von Bestandskunden muss vorliegen. Sonst droht die Sperre meldepflichtiger Transaktionen.",
+        en: "1 January 2027 (Germany): the self-certification of existing customers must be on file. Otherwise reportable transactions may be blocked.",
+      },
+      {
+        de: "10. Juli 2027: Die EU-Geldwäscheverordnung AMLR gilt. Anbieter dürfen keine anonymen Konten und keine Konten für Anonymitäts-Coins führen. Für Einzelgeschäfte ab 1.000 € gelten Sorgfaltspflichten. Eigene Wallets und Übertragungen unter Privatpersonen bleiben erlaubt. Der genaue Gesetzestext ist vor Veröffentlichung gegen EUR-Lex zu prüfen.",
+        en: "10 July 2027: the EU anti-money-laundering regulation AMLR applies. Providers may not keep anonymous accounts or accounts for anonymity-enhancing coins. Due diligence applies to occasional transactions from €1,000. Your own wallets and transfers between private persons remain allowed. The exact legal text must be checked against EUR-Lex before publication.",
+      },
+      {
+        de: "31. Juli 2027: Erste DAC8-Meldung für das Jahr 2026 in Deutschland und Österreich.",
+        en: "31 July 2027: first DAC8 report for the year 2026 in Germany and Austria.",
+      },
+      {
+        de: "30. September 2027: Erster EU-weiter Austausch der Daten zwischen den Steuerbehörden.",
+        en: "30 September 2027: first EU-wide exchange of data between tax authorities.",
+      },
+      {
+        de: "Ab Juli 2027 wählt die EU-Behörde AMLA die Unternehmen aus, die sie ab 2028 direkt beaufsichtigt (bis zu 40 Unternehmen mit Tätigkeit in mindestens sechs Mitgliedstaaten). Ob Krypto-Anbieter darunter sind, ist offen.",
+        en: "From July 2027 the EU authority AMLA selects the firms it will supervise directly from 2028 (up to 40 firms active in at least six member states). Whether crypto providers are among them is open.",
+      },
+    ],
+    sources: [
+      { label: "EU-Kommission: DAC8", url: "https://taxation-customs.ec.europa.eu/taxation/tax-transparency-cooperation/administrative-co-operation-and-mutual-assistance/directive-administrative-cooperation-dac/dac8_en" },
+      { label: "BZSt: Verfahren zum Kryptowerte-Steuertransparenzgesetz (KStTG)", url: "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/DAC8/Verfahren/verfahren_node.html" },
+      { label: "AMLR, Verordnung (EU) 2024/1624", url: "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng" },
+      { label: "AMLA: Erläuterung zur direkten Aufsicht", url: "https://www.amla.europa.eu/document/download/5aa923cc-eece-4cff-a9dd-4f687e88962b_en?filename=Explainer+-+Direct+Supervision+by+AMLA.pdf" },
+      { label: "Transfer of Funds Regulation (EU) 2023/1113", url: "https://eur-lex.europa.eu/eli/reg/2023/1113/oj" },
+      { label: "ESMA Statement Ende der Übergangsfristen (06/2026)", url: "https://www.esma.europa.eu/sites/default/files/2026-06/ESMA75-113276571-1710_Public_Statement_MiCA_transitional_period_ends.pdf" },
     ],
   },
 ];

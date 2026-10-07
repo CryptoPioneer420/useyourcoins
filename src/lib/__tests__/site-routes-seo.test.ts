@@ -86,16 +86,16 @@ describe("Routen", () => {
     for (const lang of LANGS) for (const hub of ["cards", "exchanges"] as const) expect(fixed).not.toContain(pathFor({ kind: "hub", hub }, lang).split("/")[2]);
   });
 
-  it("Umfang: 8 feste Seiten, 6 Kategorien, 6 Wissensseiten, 8 Länder, 14 Anbieter, 23 Produkte, 3 Rechtstexte", () => {
+  it("Umfang: 8 feste Seiten, 6 Kategorien, 8 Wissensseiten, 8 Länder, 14 Anbieter, 23 Produkte, 3 Rechtstexte", () => {
     const pages = indexablePages(catalog);
     const count = (k: PageRef["kind"]) => pages.filter((p) => p.kind === k).length;
     expect(count("category")).toBe(CATEGORIES.length);
-    expect(count("learn")).toBe(6);
+    expect(count("learn")).toBe(8);
     expect(count("country")).toBe(8);
     expect(count("provider")).toBe(14);
     expect(count("product")).toBe(23);
     expect(count("legal")).toBe(3);
-    expect(pages).toHaveLength(8 + 6 + 6 + 8 + 14 + 23 + 3);
+    expect(pages).toHaveLength(8 + 6 + 8 + 8 + 14 + 23 + 3);
     expect(prerenderPaths(catalog)).toHaveLength(pages.length * 2);
   });
 
@@ -159,6 +159,36 @@ describe("Wissens-Register", () => {
       const all = LEARN_PAGES.flatMap((p) => [p.primaryKeyword[lang], ...p.secondaryKeywords[lang]]);
       expect(new Set(all).size).toBe(all.length);
     }
+  });
+
+  it("Regulierungsseiten: ISO-Stand, Quellen, DE und EN gleich viele Absätze", () => {
+    for (const slug of ["dac8", "what-providers-report", "regulation-timeline"]) {
+      const t = KNOWLEDGE_TOPICS.find((x) => x.slug === slug)!;
+      expect(t.asOf, slug).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(t.sources.length, slug).toBeGreaterThanOrEqual(3);
+      for (const d of t.details) {
+        expect(d.de.length, slug).toBeGreaterThan(0);
+        expect(d.en.length, slug).toBeGreaterThan(0);
+      }
+    }
+  });
+
+  it("Zeitachse: Termine stimmen mit den belegten Daten überein", () => {
+    const tl = KNOWLEDGE_TOPICS.find((x) => x.slug === "regulation-timeline")!;
+    const de = JSON.stringify(tl.details.map((d) => d.de)) + tl.summary.de;
+    const en = JSON.stringify(tl.details.map((d) => d.en)) + tl.summary.en;
+    for (const needle of ["31. Juli 2027", "10. Juli 2027", "30. September 2027", "1. Januar 2027", "1. Juli 2026", "30. Dezember 2024"]) {
+      expect(de, needle).toContain(needle);
+    }
+    for (const needle of ["31 July 2027", "10 July 2027", "30 September 2027", "1 January 2027", "1 July 2026", "30 December 2024"]) {
+      expect(en, needle).toContain(needle);
+    }
+  });
+
+  it("Regulierungsinhalte werben nicht mit Anonymität und leiten nicht zur Umgehung an", () => {
+    const all = JSON.stringify(KNOWLEDGE_TOPICS).toLowerCase();
+    expect(all).not.toMatch(/ohne kyc|no[- ]kyc|anonym(e|er|es)? (konto|konten|account)[^.]{0,40}(vorteil|möglich|empfohlen|advantage)/);
+    expect(all).not.toMatch(/umgehen|umgehung|entgehen|avoid (reporting|tax)|evade/);
   });
 
   it("die No-KYC-Seite bleibt bis zur Freigabe unveröffentlicht", () => {
