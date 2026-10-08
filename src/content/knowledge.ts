@@ -256,8 +256,8 @@ export const KNOWLEDGE_TOPICS: readonly KnowledgeTopic[] = [
         en: "1 January 2027 (Germany): the self-certification of existing customers must be on file. Otherwise reportable transactions may be blocked.",
       },
       {
-        de: "10. Juli 2027: Die EU-Geldwäscheverordnung AMLR gilt. Anbieter dürfen keine anonymen Konten und keine Konten für Anonymitäts-Coins führen. Für Einzelgeschäfte ab 1.000 € gelten Sorgfaltspflichten. Eigene Wallets und Übertragungen unter Privatpersonen bleiben erlaubt. Der genaue Gesetzestext ist vor Veröffentlichung gegen EUR-Lex zu prüfen.",
-        en: "10 July 2027: the EU anti-money-laundering regulation AMLR applies. Providers may not keep anonymous accounts or accounts for anonymity-enhancing coins. Due diligence applies to occasional transactions from €1,000. Your own wallets and transfers between private persons remain allowed. The exact legal text must be checked against EUR-Lex before publication.",
+        de: "10. Juli 2027: Die EU-Geldwäscheverordnung AMLR gilt (Art. 90). Krypto-Anbieter dürfen keine anonymen Konten und keine Konten führen, die Transaktionen verschleiern, auch nicht über Anonymitäts-Coins (Art. 79). Bei Einzelgeschäften ab 1.000 € gelten die vollen Sorgfaltspflichten, darunter mindestens die Identifizierung (Art. 19). Eigene Wallets bleiben erlaubt. Der Verbot-Artikel richtet sich an Anbieter, die Konten führen. Überweisungen von und zu eigenen Adressen muss der Anbieter nach Risiko prüfen (Art. 40 AMLR, Travel Rule).",
+        en: "10 July 2027: the EU anti-money-laundering regulation AMLR applies (Art. 90). Crypto providers may not keep anonymous accounts or accounts that obscure transactions, including through anonymity-enhancing coins (Art. 79). For occasional transactions from €1,000 the full due diligence applies, below that at least identification (Art. 19). Your own wallets remain allowed. The prohibition addresses providers that keep accounts. Transfers from and to your own addresses must be risk-assessed by the provider (Art. 40 AMLR, travel rule).",
       },
       {
         de: "31. Juli 2027: Erste DAC8-Meldung für das Jahr 2026 in Deutschland und Österreich.",
@@ -268,14 +268,15 @@ export const KNOWLEDGE_TOPICS: readonly KnowledgeTopic[] = [
         en: "30 September 2027: first EU-wide exchange of data between tax authorities.",
       },
       {
-        de: "Ab Juli 2027 wählt die EU-Behörde AMLA die Unternehmen aus, die sie ab 2028 direkt beaufsichtigt (bis zu 40 Unternehmen mit Tätigkeit in mindestens sechs Mitgliedstaaten). Ob Krypto-Anbieter darunter sind, ist offen.",
-        en: "From July 2027 the EU authority AMLA selects the firms it will supervise directly from 2028 (up to 40 firms active in at least six member states). Whether crypto providers are among them is open.",
+        de: "Spätestens ab 1. Juli 2027 beginnt die EU-Behörde AMLA, Finanzunternehmen mit hohem Restrisiko für die direkte Aufsicht auszuwählen (Art. 12 und 13 AMLA-Verordnung). Bewertet werden Unternehmen, die in mindestens sechs Mitgliedstaaten tätig sind. Die Aufsicht beginnt sechs Monate nach Veröffentlichung der Liste, laut AMLA ab 2028, für bis zu 40 Unternehmen. Krypto-Dienstleister sind eine eigene Bewertungskategorie. Ob einer ausgewählt wird, steht erst nach der Auswahl fest.",
+        en: "From 1 July 2027 at the latest the EU authority AMLA starts selecting financial firms with a high residual risk for direct supervision (Art. 12 and 13 AMLA Regulation). Firms active in at least six member states are assessed. Supervision begins six months after the list is published, according to AMLA from 2028, for up to 40 firms. Crypto-asset service providers are a separate assessment category. Whether one is selected is only known after the selection.",
       },
     ],
     sources: [
       { label: "EU-Kommission: DAC8", url: "https://taxation-customs.ec.europa.eu/taxation/tax-transparency-cooperation/administrative-co-operation-and-mutual-assistance/directive-administrative-cooperation-dac/dac8_en" },
       { label: "BZSt: Verfahren zum Kryptowerte-Steuertransparenzgesetz (KStTG)", url: "https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/DAC8/Verfahren/verfahren_node.html" },
       { label: "AMLR, Verordnung (EU) 2024/1624", url: "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng" },
+      { label: "AMLA-Verordnung (EU) 2024/1620", url: "https://eur-lex.europa.eu/eli/reg/2024/1620/oj/eng" },
       { label: "AMLA: Erläuterung zur direkten Aufsicht", url: "https://www.amla.europa.eu/document/download/5aa923cc-eece-4cff-a9dd-4f687e88962b_en?filename=Explainer+-+Direct+Supervision+by+AMLA.pdf" },
       { label: "Transfer of Funds Regulation (EU) 2023/1113", url: "https://eur-lex.europa.eu/eli/reg/2023/1113/oj" },
       { label: "ESMA Statement Ende der Übergangsfristen (06/2026)", url: "https://www.esma.europa.eu/sites/default/files/2026-06/ESMA75-113276571-1710_Public_Statement_MiCA_transitional_period_ends.pdf" },

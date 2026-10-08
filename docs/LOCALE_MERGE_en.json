@@ -1,0 +1,42 @@
+{
+  "model": {
+    "quizTitle": "Model quiz",
+    "step1Title": "What are you looking for?",
+    "step1Subtitle": "Four short questions. You end up with a model, not a single provider.",
+    "goalCard": "A card to pay with",
+    "goalExchange": "An exchange to buy and sell",
+    "goalBoth": "Both",
+    "step2Title": "What does data protection mean to you?",
+    "step2Subtitle": "Here, data protection means: who processes your data, where, and which rights you have under the GDPR. With regulated providers you do not stay anonymous.",
+    "privacyEea": "The data controller is based in the EEA",
+    "privacySelf": "I hold my coins myself (self-custody)",
+    "privacyNone": "Neither",
+    "step3Title": "Should the provider hold an EU authorisation?",
+    "step3Subtitle": "We check whether there is an entry as a crypto-asset service provider, e-money institution or bank. An authorisation says nothing about fees or quality.",
+    "licenseYes": "Yes, authorised providers only",
+    "licenseAny": "Doesn't matter",
+    "step4Title": "Do you need euros in or out?",
+    "step4Subtitle": "This means deposits and withdrawals by bank transfer (SEPA). For many products we have not yet checked this.",
+    "fiatIn": "Deposit euros",
+    "fiatOut": "Withdraw euros",
+    "fiatBoth": "Both",
+    "fiatNo": "No euros needed",
+    "tradeoffTitle": "More regulation means more reporting",
+    "tradeoffBody": "Authorised EU providers must identify you and report tax-relevant data to the tax authorities (DAC8, first reports in Germany and Austria due on 31 July 2027). For transfers between providers your data travels along (travel rule, since 30 December 2024). From 10 July 2027 crypto providers may no longer keep anonymous accounts under the AMLR. The prohibition addresses providers that keep accounts. Your own wallets remain allowed. The provider assesses transfers from and to your own addresses by risk; from €1,000 it must establish whether the address belongs to you. Data protection therefore means here: you can request access to your data (Art. 15 GDPR). A regulated provider does not offer anonymity.",
+    "tradeoffNote": "As of 8 October 2026. Sources: Regulation (EU) 2024/1624 (AMLR) Art. 79 and 90, Regulation (EU) 2023/1113 Art. 14 and 16, Directive (EU) 2023/2226 (DAC8). Implementation in individual countries has not been checked everywhere; details on the page about regulation 2026 to 2028.",
+    "fiatNotCheckable": "Euro deposit and withdrawal routes have not yet been checked for all products. Where information is missing we show “not verified” and exclude nothing.",
+    "priorityHint": "In the next step choose “EU regulation and privacy” so that the ranking takes your answers into account.",
+    "m1Title": "Authorised EU exchange with SEPA",
+    "m1Desc": "An exchange with an EU authorisation where you can deposit and withdraw euros by bank transfer. You provide your identity and tax data, and the provider holds your coins.",
+    "m2Title": "Card through an exchange (custodial)",
+    "m2Desc": "A card linked to your account at an exchange. The exchange holds the coins and provides the equivalent value when you pay. Convenient, but you depend on the provider's terms.",
+    "m3Title": "Card with your own wallet (self-custody)",
+    "m3Desc": "You keep the keys and the card only uses an approved amount. The card is issued by an institution that identifies you. Data protection under the GDPR, but no anonymity.",
+    "m4Title": "Exchange and card from one provider",
+    "m4Desc": "Trading and card with the same provider. Little effort, but data and holdings sit in one place."
+  },
+  "regulation": {
+    "whatYouCanDoTitle": "What you can do",
+    "whatYouCanDo": "1. Have your tax ID ready: providers ask for your tax ID and tax residence in a self-certification. In Germany, existing customers must provide it by 1 January 2027.\n2. Export your transaction history: download reports and CSV files from your providers while they are available, and keep them.\n3. Request access: under Art. 15 GDPR you can ask which data a provider stores about you and passes on.\n4. Note your own addresses: record which wallet addresses belong to you so that questions about transfers can be answered quickly.\n5. Know the deadlines: your provider reports the data for 2026 by 31 July 2027 (Germany, Austria).\nThis is an explanation, not tax advice. A tax professional can help with your situation."
+  }
+}

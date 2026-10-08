@@ -1,0 +1,42 @@
+{
+  "model": {
+    "quizTitle": "Modell-Quiz",
+    "step1Title": "Was suchst du?",
+    "step1Subtitle": "Vier kurze Fragen. Am Ende steht ein Modell, kein einzelner Anbieter.",
+    "goalCard": "Eine Karte zum Bezahlen",
+    "goalExchange": "Eine Börse zum Kaufen und Verkaufen",
+    "goalBoth": "Beides",
+    "step2Title": "Was bedeutet Datenschutz für dich?",
+    "step2Subtitle": "Datenschutz heißt hier: Wer verarbeitet deine Daten, wo, und welche Rechte hast du nach der DSGVO. Bei regulierten Anbietern bleibst du nicht anonym.",
+    "privacyEea": "Der Datenverantwortliche sitzt im EWR",
+    "privacySelf": "Ich verwahre meine Coins selbst (Self-Custody)",
+    "privacyNone": "Keins von beidem",
+    "step3Title": "Soll der Anbieter eine EU-Zulassung haben?",
+    "step3Subtitle": "Geprüft wird, ob ein Eintrag als Krypto-Dienstleister, E-Geld-Institut oder Bank vorliegt. Eine Zulassung sagt nichts über Gebühren oder Qualität aus.",
+    "licenseYes": "Ja, nur mit Zulassung",
+    "licenseAny": "Egal",
+    "step4Title": "Brauchst du Euro rein oder raus?",
+    "step4Subtitle": "Gemeint sind Einzahlung und Auszahlung per Überweisung (SEPA). Für viele Produkte haben wir diese Angaben noch nicht geprüft.",
+    "fiatIn": "Euro einzahlen",
+    "fiatOut": "Euro auszahlen",
+    "fiatBoth": "Beides",
+    "fiatNo": "Kein Euro nötig",
+    "tradeoffTitle": "Mehr Regulierung bedeutet mehr Meldung",
+    "tradeoffBody": "Zugelassene EU-Anbieter müssen dich identifizieren und melden steuerrelevante Daten an die Finanzbehörden (DAC8, in Deutschland und Österreich erstmals zum 31. Juli 2027). Bei Überweisungen zwischen Anbietern reisen deine Daten mit (Travel Rule, seit 30. Dezember 2024). Ab 10. Juli 2027 dürfen Krypto-Anbieter nach der AMLR keine anonymen Konten mehr führen. Das Verbot richtet sich an Anbieter, die Konten führen. Eigene Wallets bleiben erlaubt. Überweisungen von und zu eigenen Adressen prüft der Anbieter nach Risiko; ab 1.000 € muss er klären, ob die Adresse dir gehört. Datenschutz heißt deshalb hier: Du kannst Auskunft über deine Daten verlangen (Art. 15 DSGVO). Anonymität bietet ein regulierter Anbieter nicht.",
+    "tradeoffNote": "Stand: 8. Oktober 2026. Quellen: Verordnung (EU) 2024/1624 (AMLR) Art. 79 und 90, Verordnung (EU) 2023/1113 Art. 14 und 16, Richtlinie (EU) 2023/2226 (DAC8). Die Umsetzung in einzelnen Ländern ist nicht überall geprüft, Details auf der Seite zur Regulierung 2026 bis 2028.",
+    "fiatNotCheckable": "Ein- und Auszahlungswege in Euro sind noch nicht für alle Produkte geprüft. Wo Angaben fehlen, zeigen wir „nicht geprüft“ und schließen nichts aus.",
+    "priorityHint": "Wähle im nächsten Schritt „EU-Regulierung und Datenschutz“, damit die Rangfolge deine Antworten berücksichtigt.",
+    "m1Title": "Zugelassene EU-Börse mit SEPA",
+    "m1Desc": "Eine Börse mit EU-Zulassung, bei der du Euro per Überweisung ein- und auszahlen kannst. Du gibst Identität und Steuerdaten an, der Anbieter verwahrt deine Coins.",
+    "m2Title": "Karte über eine Börse (verwahrt)",
+    "m2Desc": "Eine Karte, die an dein Konto bei einer Börse gekoppelt ist. Die Börse verwahrt die Coins und stellt beim Zahlen den Gegenwert bereit. Bequem, aber du hängst an den Bedingungen des Anbieters.",
+    "m3Title": "Karte mit eigener Wallet (Self-Custody)",
+    "m3Desc": "Du behältst die Schlüssel, die Karte nutzt nur einen freigegebenen Betrag. Die Karte gibt ein Institut aus, das dich identifiziert. Datenschutz nach DSGVO, aber keine Anonymität.",
+    "m4Title": "Börse und Karte aus einer Hand",
+    "m4Desc": "Handel und Karte beim selben Anbieter. Wenig Aufwand, aber Daten und Bestände liegen an einer Stelle."
+  },
+  "regulation": {
+    "whatYouCanDoTitle": "Was du tun kannst",
+    "whatYouCanDo": "1. Steuer-ID bereithalten: Anbieter fragen Steuer-ID und Steuerwohnsitz per Selbstauskunft ab. In Deutschland müssen Bestandskunden sie bis 1. Januar 2027 abgeben.\n2. Transaktionshistorie exportieren: Lade Berichte und CSV-Dateien deiner Anbieter herunter, solange sie verfügbar sind, und bewahre sie auf.\n3. Auskunft verlangen: Nach Art. 15 DSGVO kannst du erfragen, welche Daten ein Anbieter über dich speichert und weitergibt.\n4. Eigene Adressen notieren: Halte fest, welche Wallet-Adressen dir gehören, damit Rückfragen zu Überweisungen schnell geklärt sind.\n5. Fristen kennen: Die Daten für 2026 meldet dein Anbieter bis 31. Juli 2027 (Deutschland, Österreich).\nDas ist eine Erklärung, keine Steuerberatung. Für deine Situation hilft eine Steuerfachperson."
+  }
+}

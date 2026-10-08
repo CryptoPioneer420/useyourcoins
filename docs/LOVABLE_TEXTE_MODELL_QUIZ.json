@@ -1,0 +1,150 @@
+{
+  "model": {
+    "quizTitle": {
+      "de": "Modell-Quiz",
+      "en": "Model quiz"
+    },
+    "step1Title": {
+      "de": "Was suchst du?",
+      "en": "What are you looking for?"
+    },
+    "step1Subtitle": {
+      "de": "Vier kurze Fragen. Am Ende steht ein Modell, kein einzelner Anbieter.",
+      "en": "Four short questions. You end up with a model, not a single provider."
+    },
+    "goalCard": {
+      "de": "Eine Karte zum Bezahlen",
+      "en": "A card to pay with"
+    },
+    "goalExchange": {
+      "de": "Eine Börse zum Kaufen und Verkaufen",
+      "en": "An exchange to buy and sell"
+    },
+    "goalBoth": {
+      "de": "Beides",
+      "en": "Both"
+    },
+    "step2Title": {
+      "de": "Was bedeutet Datenschutz für dich?",
+      "en": "What does data protection mean to you?"
+    },
+    "step2Subtitle": {
+      "de": "Datenschutz heißt hier: Wer verarbeitet deine Daten, wo, und welche Rechte hast du nach der DSGVO. Bei regulierten Anbietern bleibst du nicht anonym.",
+      "en": "Here, data protection means: who processes your data, where, and which rights you have under the GDPR. With regulated providers you do not stay anonymous."
+    },
+    "privacyEea": {
+      "de": "Der Datenverantwortliche sitzt im EWR",
+      "en": "The data controller is based in the EEA"
+    },
+    "privacySelf": {
+      "de": "Ich verwahre meine Coins selbst (Self-Custody)",
+      "en": "I hold my coins myself (self-custody)"
+    },
+    "privacyNone": {
+      "de": "Keins von beidem",
+      "en": "Neither"
+    },
+    "step3Title": {
+      "de": "Soll der Anbieter eine EU-Zulassung haben?",
+      "en": "Should the provider hold an EU authorisation?"
+    },
+    "step3Subtitle": {
+      "de": "Geprüft wird, ob ein Eintrag als Krypto-Dienstleister, E-Geld-Institut oder Bank vorliegt. Eine Zulassung sagt nichts über Gebühren oder Qualität aus.",
+      "en": "We check whether there is an entry as a crypto-asset service provider, e-money institution or bank. An authorisation says nothing about fees or quality."
+    },
+    "licenseYes": {
+      "de": "Ja, nur mit Zulassung",
+      "en": "Yes, authorised providers only"
+    },
+    "licenseAny": {
+      "de": "Egal",
+      "en": "Doesn't matter"
+    },
+    "step4Title": {
+      "de": "Brauchst du Euro rein oder raus?",
+      "en": "Do you need euros in or out?"
+    },
+    "step4Subtitle": {
+      "de": "Gemeint sind Einzahlung und Auszahlung per Überweisung (SEPA). Für viele Produkte haben wir diese Angaben noch nicht geprüft.",
+      "en": "This means deposits and withdrawals by bank transfer (SEPA). For many products we have not yet checked this."
+    },
+    "fiatIn": {
+      "de": "Euro einzahlen",
+      "en": "Deposit euros"
+    },
+    "fiatOut": {
+      "de": "Euro auszahlen",
+      "en": "Withdraw euros"
+    },
+    "fiatBoth": {
+      "de": "Beides",
+      "en": "Both"
+    },
+    "fiatNo": {
+      "de": "Kein Euro nötig",
+      "en": "No euros needed"
+    },
+    "tradeoffTitle": {
+      "de": "Mehr Regulierung bedeutet mehr Meldung",
+      "en": "More regulation means more reporting"
+    },
+    "tradeoffBody": {
+      "de": "Zugelassene EU-Anbieter müssen dich identifizieren und melden steuerrelevante Daten an die Finanzbehörden (DAC8, in Deutschland und Österreich erstmals zum 31. Juli 2027). Bei Überweisungen zwischen Anbietern reisen deine Daten mit (Travel Rule, seit 30. Dezember 2024). Ab 10. Juli 2027 dürfen Krypto-Anbieter nach der AMLR keine anonymen Konten mehr führen. Das Verbot richtet sich an Anbieter, die Konten führen. Eigene Wallets bleiben erlaubt. Überweisungen von und zu eigenen Adressen prüft der Anbieter nach Risiko; ab 1.000 € muss er klären, ob die Adresse dir gehört. Datenschutz heißt deshalb hier: Du kannst Auskunft über deine Daten verlangen (Art. 15 DSGVO). Anonymität bietet ein regulierter Anbieter nicht.",
+      "en": "Authorised EU providers must identify you and report tax-relevant data to the tax authorities (DAC8, first reports in Germany and Austria due on 31 July 2027). For transfers between providers your data travels along (travel rule, since 30 December 2024). From 10 July 2027 crypto providers may no longer keep anonymous accounts under the AMLR. The prohibition addresses providers that keep accounts. Your own wallets remain allowed. The provider assesses transfers from and to your own addresses by risk; from €1,000 it must establish whether the address belongs to you. Data protection therefore means here: you can request access to your data (Art. 15 GDPR). A regulated provider does not offer anonymity."
+    },
+    "tradeoffNote": {
+      "de": "Stand: 8. Oktober 2026. Quellen: Verordnung (EU) 2024/1624 (AMLR) Art. 79 und 90, Verordnung (EU) 2023/1113 Art. 14 und 16, Richtlinie (EU) 2023/2226 (DAC8). Die Umsetzung in einzelnen Ländern ist nicht überall geprüft, Details auf der Seite zur Regulierung 2026 bis 2028.",
+      "en": "As of 8 October 2026. Sources: Regulation (EU) 2024/1624 (AMLR) Art. 79 and 90, Regulation (EU) 2023/1113 Art. 14 and 16, Directive (EU) 2023/2226 (DAC8). Implementation in individual countries has not been checked everywhere; details on the page about regulation 2026 to 2028."
+    },
+    "fiatNotCheckable": {
+      "de": "Ein- und Auszahlungswege in Euro sind noch nicht für alle Produkte geprüft. Wo Angaben fehlen, zeigen wir „nicht geprüft“ und schließen nichts aus.",
+      "en": "Euro deposit and withdrawal routes have not yet been checked for all products. Where information is missing we show “not verified” and exclude nothing."
+    },
+    "priorityHint": {
+      "de": "Wähle im nächsten Schritt „EU-Regulierung und Datenschutz“, damit die Rangfolge deine Antworten berücksichtigt.",
+      "en": "In the next step choose “EU regulation and privacy” so that the ranking takes your answers into account."
+    },
+    "m1Title": {
+      "de": "Zugelassene EU-Börse mit SEPA",
+      "en": "Authorised EU exchange with SEPA"
+    },
+    "m1Desc": {
+      "de": "Eine Börse mit EU-Zulassung, bei der du Euro per Überweisung ein- und auszahlen kannst. Du gibst Identität und Steuerdaten an, der Anbieter verwahrt deine Coins.",
+      "en": "An exchange with an EU authorisation where you can deposit and withdraw euros by bank transfer. You provide your identity and tax data, and the provider holds your coins."
+    },
+    "m2Title": {
+      "de": "Karte über eine Börse (verwahrt)",
+      "en": "Card through an exchange (custodial)"
+    },
+    "m2Desc": {
+      "de": "Eine Karte, die an dein Konto bei einer Börse gekoppelt ist. Die Börse verwahrt die Coins und stellt beim Zahlen den Gegenwert bereit. Bequem, aber du hängst an den Bedingungen des Anbieters.",
+      "en": "A card linked to your account at an exchange. The exchange holds the coins and provides the equivalent value when you pay. Convenient, but you depend on the provider's terms."
+    },
+    "m3Title": {
+      "de": "Karte mit eigener Wallet (Self-Custody)",
+      "en": "Card with your own wallet (self-custody)"
+    },
+    "m3Desc": {
+      "de": "Du behältst die Schlüssel, die Karte nutzt nur einen freigegebenen Betrag. Die Karte gibt ein Institut aus, das dich identifiziert. Datenschutz nach DSGVO, aber keine Anonymität.",
+      "en": "You keep the keys and the card only uses an approved amount. The card is issued by an institution that identifies you. Data protection under the GDPR, but no anonymity."
+    },
+    "m4Title": {
+      "de": "Börse und Karte aus einer Hand",
+      "en": "Exchange and card from one provider"
+    },
+    "m4Desc": {
+      "de": "Handel und Karte beim selben Anbieter. Wenig Aufwand, aber Daten und Bestände liegen an einer Stelle.",
+      "en": "Trading and card with the same provider. Little effort, but data and holdings sit in one place."
+    }
+  },
+  "regulation": {
+    "whatYouCanDoTitle": {
+      "de": "Was du tun kannst",
+      "en": "What you can do"
+    },
+    "whatYouCanDo": {
+      "de": "1. Steuer-ID bereithalten: Anbieter fragen Steuer-ID und Steuerwohnsitz per Selbstauskunft ab. In Deutschland müssen Bestandskunden sie bis 1. Januar 2027 abgeben.\n2. Transaktionshistorie exportieren: Lade Berichte und CSV-Dateien deiner Anbieter herunter, solange sie verfügbar sind, und bewahre sie auf.\n3. Auskunft verlangen: Nach Art. 15 DSGVO kannst du erfragen, welche Daten ein Anbieter über dich speichert und weitergibt.\n4. Eigene Adressen notieren: Halte fest, welche Wallet-Adressen dir gehören, damit Rückfragen zu Überweisungen schnell geklärt sind.\n5. Fristen kennen: Die Daten für 2026 meldet dein Anbieter bis 31. Juli 2027 (Deutschland, Österreich).\nDas ist eine Erklärung, keine Steuerberatung. Für deine Situation hilft eine Steuerfachperson.",
+      "en": "1. Have your tax ID ready: providers ask for your tax ID and tax residence in a self-certification. In Germany, existing customers must provide it by 1 January 2027.\n2. Export your transaction history: download reports and CSV files from your providers while they are available, and keep them.\n3. Request access: under Art. 15 GDPR you can ask which data a provider stores about you and passes on.\n4. Note your own addresses: record which wallet addresses belong to you so that questions about transfers can be answered quickly.\n5. Know the deadlines: your provider reports the data for 2026 by 31 July 2027 (Germany, Austria).\nThis is an explanation, not tax advice. A tax professional can help with your situation."
+    }
+  }
+}
